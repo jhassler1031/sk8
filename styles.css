@@ -1,3 +1,5 @@
+
+/* General Elements */
 * {
   box-sizing: border-box;
 }
@@ -8,4 +10,40 @@ img {
 
 body {
   background-image: url("images/bg.jpg");
+}
+
+/* ==================== Specific Elements ===================== */
+
+/* =============== Header ===============*/
+header .col-1 {
+  border-bottom: 3px solid #7F7D7A;
+}
+
+/* =========================== NAV Bar ============================= */
+nav a {
+  color: white;
+  background-color: #A73634;
+  padding: 10px 55px;
+  border-bottom: 3px solid #7F7D7A;
+}
+
+/* ========================== Top Picture ============================= */
+.top-picture {
+  position: relative;
+  border: 6px solid white;
+  background-image: url(images/top-image.png);
+  background-position: 30% 18%;  height: 100%;
+  margin: 65px;
+}
+
+.logo-image {
+  position: absolute;
+  top: 15%;
+  z-index: 1;
+}
+
+.grid-image {
+  position: relative;
+  opacity: .5;
+  max-height: 400px;
 }
