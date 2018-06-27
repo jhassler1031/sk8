@@ -40,7 +40,9 @@ nav>div:not(:last-child) {
 .top-picture {
   position: relative;
   border: 6px solid #FEFEFE;
-  background: url("images/top-image.png") no-repeat 30% 20%;
+  background: url("images/top-image.png") no-repeat;
+  background-size: 150%;
+  background-position: center;
   margin: 30px;
   height: 30vw;
   min-height: 300px;
@@ -88,6 +90,8 @@ align-items: center;
 .bio-image>h1 {
   color: #FEFEFE;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 10vw;
   min-width: 10px;
 }
@@ -99,6 +103,7 @@ align-items: center;
 /* ============================ Board Designs ============================ */
 #board-design {
   background-color: #FFFFFE;
+  margin: 10px;
 }
 
 /* On medium screens, need to rotate the board picturs 90 degrees and shrink the picture */
@@ -127,4 +132,13 @@ align-items: center;
     transform: rotate(90deg) translateY(-66%);
     width: 15vw;
   }
+}
+
+/* ============================= Contact Us =============================== */
+#contact-us {
+  background-color: #FFFFFE;
+}
+
+#contact-us .btn-danger {
+  background-color: #A73634;
 }

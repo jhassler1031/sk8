@@ -56,28 +56,28 @@
       <div class="col news-item">
         <h3>Tony Hawk Foundation Raises Big Money at Celeb Fundraiser</h3>
         <time datetime="2013-10-10">October 10, 2013</time>
-        <p>Stuff</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <input type="button" value="[Read More]">
       </div>
 
       <div class="col news-item">
         <h3>Rodney Mullen: Pop and ollie and innovate! (TED Talk)</h3>
         <time datetime="2013-10-3">March 10, 2013</time>
-        <p>Stuff</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <input type="button" value="[Read More]">
       </div>
 
       <div class="col news-item">
         <h3>Ray Barbee Talks 'Ban this'</h3>
         <time datetime="2013-4-10">October 4, 2013</time>
-        <p>Stuff</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <input type="button" value="[Read More]">
       </div>
     </div>
 
     <!-- ===================== Skateboarders ===================== -->
     <div class="row" id="skateboarders">
-      <div class="col-4 skateboarder-bio">
+      <div class="col-12 col-md skateboarder-bio">
         <div class="bio-image">
           <h1>Lance Mountain</h1>
           <img src="images/sk8er-4.png" alt="Picture of Lance Mountain">
@@ -85,7 +85,7 @@
 
         <!-- Below is a nested colume -->
         <div class="row">
-          <div class="col-auto skateboarder-bio">
+          <div class="col-12 col-md-auto skateboarder-bio">
             <div class="bio-image">
               <h1>Steve Caballero</h1>
               <img src="images/sk8er-1.png" alt="Picture of Steve Caballero">
@@ -94,14 +94,14 @@
         </div>
       </div>
 
-      <div class="col-4 skateboarder-bio">
+      <div class="col-12 col-md skateboarder-bio">
         <div class="bio-image">
           <h1>Rodney Mullen</h1>
           <img src="images/sk8er-3.png" alt="Picture of Rodney Mullen">
         </div>
       </div>
 
-      <div class="col-4 skateboarder-bio">
+      <div class="col-12 col-md skateboarder-bio">
         <div class="bio-image">
           <h1>Tommy Geurrero</h1>
           <img src="images/sk8er-2.png" alt="Picture of Tommy Geurrero">
@@ -154,21 +154,28 @@
 
     <!-- ========================== Contact Us ========================== -->
     <div class="row contact-info" id="contact-us">
-      <h1>Contact Us For More Information</h1>
+      <div class="col">
+        <h1>Contact Us For More Information</h1>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      <input class="name" type="text" value="Name">
-
-      <input type="text" class="email" value="Email">
-
-      <input type="text" class="message" value="Your Message">
-
-      <div class="row">
-        <div class="col">Facebook</div>
-        <div class="col">Twitter</div>
-        <div class="col">Youtube</div>
+        <div class="row">
+          <div class="col">Facebook</div>
+          <div class="col">Twitter</div>
+          <div class="col">Youtube</div>
+        </div>
       </div>
+
+      <form>
+        <input class="form-control" type="name" placeholder="Name">
+
+        <input type="email" class="form-control" placeholder="Enter email">
+
+        <input type="message" class="form-control" placeholder="Your Message">
+
+        <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
+
     </div>
     <!-- ======================= End of main container ===================== -->
   </div>
