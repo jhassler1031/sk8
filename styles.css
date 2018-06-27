@@ -23,23 +23,36 @@ header .col-1 {
 nav a {
   color: white;
   background-color: #A73634;
-  padding: 10px 55px;
+  white-space: nowrap;
+}
+
+nav>div {
+  background-color: #c6001c;
   border-bottom: 3px solid #7F7D7A;
+  text-align: center;
+}
+
+nav>div:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* ========================== Top Picture ============================= */
 .top-picture {
   position: relative;
   border: 6px solid #FEFEFE;
-  background-image: url(images/top-image.png);
-  background-position: 30% 20%;
+  background: url("images/top-image.png") no-repeat 30% 20%;
   margin: 30px;
+  height: 30vw;
+  min-height: 300px;
 }
 
 .logo-image {
   position: absolute;
   top: 15%;
+  /* z-index is used to move things on top of or behind other elements */
   z-index: 1;
+  width: 30vw;
+  min-width: 30px;
 }
 
 .grid-image {
@@ -57,4 +70,61 @@ nav a {
 .news-item {
   background-color: #FEFEFE;
   margin: 5px;
+}
+
+/* ========================= Skateboarders Bar ========================== */
+.skateboarder-bio {
+
+}
+
+.bio-image {
+display: flex;
+border: 3px solid #FEFEFE;
+margin: 10px;
+align-items: center;
+
+}
+
+.bio-image>h1 {
+  color: #FEFEFE;
+  position: absolute;
+  width: 10vw;
+  min-width: 10px;
+}
+
+.bio-image>img {
+  align-self: center;
+}
+
+/* ============================ Board Designs ============================ */
+#board-design {
+  background-color: #FFFFFE;
+}
+
+/* On medium screens, need to rotate the board picturs 90 degrees and shrink the picture */
+@media (max-width: 768px) {
+  #board-design .col-12 {
+    max-height: 25vw;
+    padding: 0;
+    transform: translateY(-70%);
+  }
+
+  #board-design img {
+    transform: rotate(90deg) translateY(-45%);
+    width: 15vw;
+  }
+}
+
+/* For small screens */
+@media (max-width: 540px) {
+  #board-design .col-12 {
+    max-height: 25vw;
+    padding: 0;
+    transform: translateY(-70%);
+  }
+
+  #board-design img {
+    transform: rotate(90deg) translateY(-66%);
+    width: 15vw;
+  }
 }
