@@ -5,3 +5,7 @@
 img {
   width: 100%;
 }
+
+body {
+  background-image: url("images/bg.jpg");
+}
