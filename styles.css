@@ -30,10 +30,10 @@ nav a {
 /* ========================== Top Picture ============================= */
 .top-picture {
   position: relative;
-  border: 6px solid white;
+  border: 6px solid #FEFEFE;
   background-image: url(images/top-image.png);
-  background-position: 30% 18%;  height: 100%;
-  margin: 65px;
+  background-position: 30% 20%;
+  margin: 30px;
 }
 
 .logo-image {
@@ -44,6 +44,17 @@ nav a {
 
 .grid-image {
   position: relative;
-  opacity: .5;
-  max-height: 400px;
+  max-height: 350px;
+}
+
+.grid-image>img {
+  height: 100%;
+  opacity: .3;
+
+}
+
+/* ============================= News Bar ============================== */
+.news-item {
+  background-color: #FEFEFE;
+  margin: 5px;
 }
