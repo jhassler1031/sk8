@@ -20,8 +20,17 @@ body {
 /* ==================== Specific Elements ===================== */
 
 /* =============== Header ===============*/
-header .col-1 {
-  border-bottom: 3px solid #7F7D7A;
+.social-media {
+  margin: 3px;
+}
+
+.social-media img {
+border-bottom: 3px solid #7F7D7A;
+width: 5vw;
+}
+
+#social-icon {
+  width: 5vw;
 }
 
 /* =========================== NAV Bar ============================= */
