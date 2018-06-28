@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+
 
 /* General Elements */
 * {
@@ -10,6 +14,7 @@ img {
 
 body {
   background-image: url("images/bg.jpg");
+  font-family: "Montserrat", helvetica, sans-serif;
 }
 
 /* ==================== Specific Elements ===================== */
@@ -72,16 +77,41 @@ nav>div:not(:last-child) {
 .news-item {
   background-color: #FEFEFE;
   margin: 5px;
+  font-family: "Montserrat", helvetica, sans-serif;
+}
+
+.news-title {
+font-size: 1.5rem;
+font-weight: bold;
+margin: 30px 10px;
+}
+
+.news-text {
+  font-size: .8rem;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.news-time {
+  color: #C8C8C8;
+  margin-left: 10px;
+}
+
+.news-button {
+  color: #B04948;
+  background-color: white;
+  -webkit-appearance: none;
+  border: none;
 }
 
 /* ========================= Skateboarders Bar ========================== */
 .skateboarder-bio {
-
+font-family: "Paytone+One", helvetica, sans-serif;
 }
 
 .bio-image {
 display: flex;
-border: 3px solid #FEFEFE;
+border: 5px solid #FEFEFE;
 margin: 10px;
 align-items: center;
 
@@ -91,7 +121,7 @@ align-items: center;
   color: #FEFEFE;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-80%);
   width: 10vw;
   min-width: 10px;
 }
@@ -104,6 +134,7 @@ align-items: center;
 #board-design {
   background-color: #FFFFFE;
   margin: 10px;
+  font-family: "Montserrat", helvetica, sans-serif;
 }
 
 /* On medium screens, need to rotate the board picturs 90 degrees and shrink the picture */
@@ -137,8 +168,33 @@ align-items: center;
 /* ============================= Contact Us =============================== */
 #contact-us {
   background-color: #FFFFFE;
+  padding: 15px;
+  font-family: "Montserrat", helvetica, sans-serif;
+}
+
+#contact-us .side-info {
+
 }
 
 #contact-us .btn-danger {
   background-color: #A73634;
+  border-radius: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  align-self: flex-end;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+}
+
+#contact-us .form-control {
+  color: #BEBEBE;
+  margin: 10px;
+  border-top: 4px solid #BEBEBE;
+  border-left: 4px solid #BEBEBE;
+  position: relative;
+}
+
+#contact-us .contact-form {
+  margin: 10px;
 }
