@@ -12,204 +12,209 @@
   <body>
     <!-- Single container for everything -->
     <div class="container">
-    <!--===================== HEADER ===================== -->
+      <!--===================== HEADER ===================== -->
 
-    <!-- Container for social media -->
-      <header class="row justify-content-end social-media">
-        <div class="col-1" id="social-icon">
-          <img src="images/fb-icon.png" alt="Facebook Icon">
+      <!-- Container for social media -->
+      <!-- Justify-content-end causes the cols to go to the right -->
+        <header class="row justify-content-end social-media">
+          <div class="col-1" id="social-icon">
+            <img src="images/fb-icon.png" alt="Facebook Icon">
+          </div>
+
+          <div class="col-1">
+            <img src="images/rss-icon.png" alt="RSS Feed">
+          </div>
+
+          <div class="col-1">
+            <img src="images/twitter-icon.png" alt="Twitter Icon">
+          </div>
+
+          <div class="col-1">
+            <img src="images/youtube-icon.png" alt="Youtube Icon">
+          </div>
+        </header>
+
+      <!-- ======================= NAV ======================= -->
+      <nav class="row">
+        <div class="col-12 col-md">
+          <!-- could use %ndash and then put the text in a span -->
+          <a href="#news">- Sk8T News -</a>
         </div>
 
-        <div class="col-1">
-          <img src="images/rss-icon.png" alt="RSS Feed">
+        <div class="col-12 col-md">
+          <a href="#skateboarders">- Skateboarders -</a>
         </div>
 
-        <div class="col-1">
-          <img src="images/twitter-icon.png" alt="Twitter Icon">
+        <div class="col-12 col-md">
+          <a href="#board-design">- Board Design -</a>
         </div>
 
-        <div class="col-1">
-          <img src="images/youtube-icon.png" alt="Youtube Icon">
+        <div class="col-12 col-md">
+          <a href="#contact-us">- Contact Us -</a>
         </div>
-      </header>
+      </nav>
 
-    <!-- ======================= NAV ======================= -->
-    <nav class="row">
-      <div class="col-12 col-md">
-        <!-- can us %ndash and then put the text in a span -->
-        <a href="#news">- Sk8T News -</a>
-      </div>
-
-      <div class="col-12 col-md">
-        <a href="#skateboarders">- Skateboarders -</a>
-      </div>
-
-      <div class="col-12 col-md">
-        <a href="#board-design">- Board Design -</a>
-      </div>
-
-      <div class="col-12 col-md">
-        <a href="#contact-us">- Contact Us -</a>
-      </div>
-    </nav>
-
-    <!-- ====================== TOP PICTURE ====================== -->
-    <div class="row no-gutters top-picture">
-      <div class="logo-image">
-        <img src="images/peralta-logo.png" alt="Peralta Logo">
-      </div>
-
-      <div class="grid-image">
-        <img src="images/grid.png" alt="Grid">
-      </div>
-    </div>
-
-    <!-- ========================== NEWS ========================== -->
-    <div class="row" id="news">
-      <div class="col-12 col-md news-item">
-        <!-- Can place all of this in an article so you can get rid of the margin on the above column, helps with spacing -->
-        <article>
-          <h1 class="col news-title">Tony Hawk Foundation Raises Big Money at Celeb Fundraiser</h1>
-          <time class="col news-time" datetime="2013-10-10">October 10, 2013</time>
-          <p class="col news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <input class="col news-button" type="button" value="[ Read More ]">
-        </article>
-
-      </div>
-
-      <div class="col-12 col-md news-item">
-        <article>
-          <h1 class="col news-title">Rodney Mullen: Pop and ollie and innovate! (TED Talk)</h1>
-          <time class="col news-time" datetime="2013-10-3">March 10, 2013</time>
-          <p class="col news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <input class="col news-button" type="button" value="[ Read More ]">
-        </article>
-
-      </div>
-
-      <div class="col-12 col-md news-item">
-        <article>
-          <h1 class="col news-title">Ray Barbee Talks 'Ban this'</h1>
-          <time class="col news-time" datetime="2013-4-10">October 4, 2013</time>
-          <p class="col news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <input class="col news-button" type="button" value="[ Read More ]">
-        </article>
-
-      </div>
-    </div>
-
-    <!-- ===================== Skateboarders ===================== -->
-    <div class="row" id="skateboarders">
-      <div class="col-12 col-md skateboarder-bio">
-        <div class="bio-image">
-          <h1>Lance Mountain</h1>
-          <img src="images/sk8er-4.png" alt="Picture of Lance Mountain">
+      <!-- ====================== TOP PICTURE ====================== -->
+      <div class="row no-gutters top-picture">
+        <div class="logo-image">
+          <img src="images/peralta-logo.png" alt="Peralta Logo">
         </div>
 
-        <!-- Below is a nested colume -->
-        <div class="row">
-          <div class="col-12 col-md-auto skateboarder-bio">
-            <div class="bio-image">
+        <div class="grid-image">
+          <img src="images/grid.png" alt="Grid">
+        </div>
+      </div>
+
+      <!-- ========================== NEWS ========================== -->
+      <div class="row" id="news">
+        <div class="col-12 col-md news-item">
+          <!-- placing all of this in an article so you can get rid of the margin on the above column, helps with spacing -->
+          <article>
+            <h1 class="news-title">Tony Hawk Foundation Raises Big Money at Celeb Fundraiser</h1>
+            <time class="news-time" datetime="2013-10-10">October 10, 2013</time>
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <input class="news-button" type="button" value="[ Read More ]">
+          </article>
+        </div>
+
+        <div class="col-12 col-md news-item">
+          <article>
+            <h1 class="news-title">Rodney Mullen: Pop and ollie and innovate! (TED Talk)</h1>
+            <time class="news-time" datetime="2013-10-3">March 10, 2013</time>
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <input class="news-button" type="button" value="[ Read More ]">
+          </article>
+        </div>
+
+        <div class="col-12 col-md news-item">
+          <article>
+            <h1 class="news-title">Ray Barbee Talks 'Ban this'</h1>
+            <time class="news-time" datetime="2013-4-10">October 4, 2013</time>
+            <p class="news-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <input class="news-button" type="button" value="[ Read More ]">
+          </article>
+        </div>
+      </div>
+
+      <!-- ===================== Skateboarders ===================== -->
+      <div class="row" id="skateboarders">
+        <!-- Here is the 8 width column to contain the top left two and the bottom left -->
+        <div class="col-md-8">
+          <!-- This row groups the next two at the top left -->
+          <div class="row">
+            <div class="col-12 col-md skateboarder-bio">
+              <div class="bio-image">
+                <h1>Lance Mountain</h1>
+                <img src="images/sk8er-4.png" alt="Picture of Lance Mountain">
+              </div>
+            </div>
+
+            <div class="col-12 col-md skateboarder-bio">
+              <div class="bio-image">
+                <h1>Rodney Mullen</h1>
+                <img src="images/sk8er-3.png" alt="Picture of Rodney Mullen">
+              </div>
+            </div>
+          </div>
+
+          <!-- Now this column gets put under the two above it bc it's in the same column
+          but outside of the nested row -->
+          <div id="bottom-left" class="col-12 col-md skateboarder-bio">
+            <div class="bio-image bottom-left-img">
               <h1>Steve Caballero</h1>
               <img src="images/sk8er-1.png" alt="Picture of Steve Caballero">
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-12 col-md skateboarder-bio">
-        <div class="bio-image">
-          <h1>Rodney Mullen</h1>
-          <img src="images/sk8er-3.png" alt="Picture of Rodney Mullen">
-        </div>
-      </div>
-
-      <div class="col-12 col-md skateboarder-bio">
-        <div class="bio-image">
-          <h1>Tommy Geurrero</h1>
-          <img src="images/sk8er-2.png" alt="Picture of Tommy Geurrero">
-        </div>
-      </div>
-    </div>
-
-    <!-- ====================== Board Design ======================-->
-    <div class="row" id="board-design">
-      <div class="col-12 col-md">
-        <img src="images/sk8-1.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-2.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-3.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-4.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-5.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-6.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-7.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-8.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-9.png" alt="Picture of a Skateboard Design">
-      </div>
-
-      <div class="col-12 col-md">
-        <img src="images/sk8-10.png" alt="Picture of a Skateboard Design">
-      </div>
-    </div>
-
-    <!-- ========================== Contact Us ========================== -->
-    <div class="row contact-info" id="contact-us">
-      <div class="col side-info">
-        <h1>Contact Us For More Information</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="row">
-          <div class="col-1 small-icon">
-            <img src="images/fb-small.png" alt="Small Facebook Icon">
-          </div>
-          <div class="col-1 small-icon">
-            <img src="images/rss-small.png" alt="RSS Small Icon">
-          </div>
-          <div class="col-1 small-icon">
-            <img src="images/twitter-small.png" alt="Small Twitter Icon">
-          </div>
-          <div class="col-1 small-icon">
-            <img src="images/yt-small.png" alt="Small Youtube Icon">
+        <!-- Here is the 4 width col for the one on the far right -->
+        <div id="right-bio" class="col-12 col-md-4 skateboarder-bio">
+          <div class="bio-image">
+            <h1>Tommy Geurrero</h1>
+            <img src="images/sk8er-2.png" alt="Picture of Tommy Geurrero">
           </div>
         </div>
       </div>
 
-      <form class="col contact-form">
-        <input class="form-control" type="name" placeholder="Name">
+      <!-- ====================== Board Design ======================-->
+      <div class="row no-gutters" id="board-design">
+        <div class="col-12 col-md">
+          <img src="images/sk8-1.png" alt="Picture of a Skateboard Design">
+        </div>
 
-        <input type="email" class="form-control" placeholder="Enter email">
+        <div class="col-12 col-md">
+          <img src="images/sk8-2.png" alt="Picture of a Skateboard Design">
+        </div>
 
-        <input type="message" class="form-control" placeholder="Your Message">
+        <div class="col-12 col-md">
+          <img src="images/sk8-3.png" alt="Picture of a Skateboard Design">
+        </div>
 
-        <button type="submit" class="btn btn-danger">Submit</button>
-      </form>
+        <div class="col-12 col-md">
+          <img src="images/sk8-4.png" alt="Picture of a Skateboard Design">
+        </div>
 
+        <div class="col-12 col-md">
+          <img src="images/sk8-5.png" alt="Picture of a Skateboard Design">
+        </div>
+
+        <div class="col-12 col-md">
+          <img src="images/sk8-6.png" alt="Picture of a Skateboard Design">
+        </div>
+
+        <div class="col-12 col-md">
+          <img src="images/sk8-7.png" alt="Picture of a Skateboard Design">
+        </div>
+
+        <div class="col-12 col-md">
+          <img src="images/sk8-8.png" alt="Picture of a Skateboard Design">
+        </div>
+
+        <div class="col-12 col-md">
+          <img src="images/sk8-9.png" alt="Picture of a Skateboard Design">
+        </div>
+
+        <div class="col-12 col-md">
+          <img src="images/sk8-10.png" alt="Picture of a Skateboard Design">
+        </div>
+      </div>
+
+      <!-- ========================== Contact Us ========================== -->
+      <div class="row contact-info no-gutters" id="contact-us">
+        <div class="col side-info">
+          <h1>Contact Us For More Information</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <!-- Adding the small social media icons -->
+          <div class="row">
+            <div class="col-1 small-icon">
+              <img src="images/fb-small.png" alt="Small Facebook Icon">
+            </div>
+            <div class="col-1 small-icon">
+              <img src="images/rss-small.png" alt="RSS Small Icon">
+            </div>
+            <div class="col-1 small-icon">
+              <img src="images/twitter-small.png" alt="Small Twitter Icon">
+            </div>
+            <div class="col-1 small-icon">
+              <img src="images/yt-small.png" alt="Small Youtube Icon">
+            </div>
+          </div>
+        </div>
+
+        <!-- Create the form using bootstrap forms -->
+        <form class="col contact-form">
+          <input class="form-control" type="name" placeholder="Name">
+
+          <input type="email" class="form-control" placeholder="Enter email">
+
+          <input type="message" class="form-control" placeholder="Your Message">
+
+          <button type="submit" class="btn btn-danger">Submit</button>
+        </form>
+
+      </div>
+      <!-- ======================= End of main container ===================== -->
     </div>
-    <!-- ======================= End of main container ===================== -->
-  </div>
   </body>
 </html>
