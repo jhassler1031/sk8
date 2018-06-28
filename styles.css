@@ -38,6 +38,8 @@ nav a {
   color: white;
   background-color: #A73634;
   white-space: nowrap;
+  display: inline-block;
+  width: 100%;
 }
 
 nav>div {
@@ -53,13 +55,15 @@ nav>div:not(:last-child) {
 /* ========================== Top Picture ============================= */
 .top-picture {
   position: relative;
-  border: 6px solid #FEFEFE;
-  background: url("images/top-image.png") no-repeat;
+  margin-top: 20px;
+  /* moved all this to the grid image !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  /* border: 6px solid #FEFEFE; */
+  /* background: url("images/top-image.png") no-repeat;
   background-size: 150%;
-  background-position: center;
-  margin: 30px;
-  height: 30vw;
-  min-height: 300px;
+  background-position: center; */
+  /* margin: 30px; */
+  /* height: 30vw; */
+  /* min-height: 300px; */
 }
 
 .logo-image {
@@ -68,25 +72,35 @@ nav>div:not(:last-child) {
   /* z-index is used to move things on top of or behind other elements */
   z-index: 1;
   width: 30vw;
-  min-width: 30px;
+  min-width: 250px;
 }
 
 .grid-image {
   position: relative;
   max-height: 350px;
+  background: url("images/top-image.png") no-repeat;
+  background-size: 150%;
+  background-position: 40% 34%;
+  /* applied no gutters tot he row to remove margins instead of doing manually like below */
+  /* margin-left: 15px;
+  margin-right:  15px; */
+  border: 6px solid #FEFEFE;
 }
 
 .grid-image>img {
   height: 100%;
   opacity: .3;
-
 }
 
 /* ============================= News Bar ============================== */
 .news-item {
-  background-color: #FEFEFE;
-  margin: 5px;
+  /* background-color: #FEFEFE; */
+  /* margin: 5px; */
   font-family: "Montserrat", helvetica, sans-serif;
+}
+
+.news-item article {
+  background-color: #FEFEFE;
 }
 
 .news-title {
